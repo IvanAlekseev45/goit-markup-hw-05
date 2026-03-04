@@ -551,6 +551,10 @@ ul {
   display: flex;
   gap: 24px;
 }
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
 /* -------------------------------------M O D A L--------------------------------------------------- */
 
 .div-input {
@@ -573,8 +577,8 @@ ul {
   transition:
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* opacity: 0;
-  pointer-events: none; */
+  opacity: 0;
+  pointer-events: none;
 }
 .modal {
   background-color: #ffffff;
@@ -722,9 +726,6 @@ ul {
   border-color: #4d5ae5;
 }
 
-.div-checkbox {
-  margin-bottom: 17px;
-}
 .input-place:focus + .vector-modal-icon {
   fill: #4d5ae5;
 }
@@ -779,10 +780,6 @@ ul {
   gap: 8px;
   align-items: center;
   cursor: pointer;
-}
-
-.svg-check {
-  fill: transparent;
 }
 
 .modal-checkbox:checked + .modal-label span {
