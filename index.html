@@ -465,8 +465,8 @@
           </ul>
         </div>
         <div class="div-form">
+          <p class="p-subscribe">Subscribe</p>
           <form>
-            <p class="p-subscribe">Subscribe</p>
             <div class="div-footer-form">
               <input type="email" placeholder="E-mail" class="input" />
               <button type="submit" class="button-submit button-flex">
@@ -533,14 +533,15 @@
             ></textarea>
           </div>
           <div class="div-checkbox">
-            <label for="id-checkbox" class="modal-label">
-              <input
-                type="checkbox"
-                id="id-checkbox"
-                name="id_checkbox"
-                class="modal-checkbox"
-                required
-              />
+            <input
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              class="modal-checkbox visually-hidden"
+              required
+              value="true"
+            />
+            <label for="user-privacy" class="modal-label">
               <span class="checkbox-custom">
                 <svg width="10" height="8" class="svg-check">
                   <use href="./images/icons.svg#icon-frame"></use>
