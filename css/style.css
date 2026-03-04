@@ -430,6 +430,11 @@ ul {
   margin-bottom: 8px;
 }
 /* -----------------------------------------FOOTER----------------------------------------------------- */
+
+.vektor-footer {
+  margin-left: 16px;
+}
+
 .footer-section {
   background-color: #2e2f42;
   padding-top: 100px;
@@ -499,7 +504,7 @@ ul {
   color: #ffffff;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -539,6 +544,8 @@ ul {
   height: 40px;
   box-shadow: 0 4px 4px 0 rgb(0 0 0 / 0.15);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  color: #ffffff;
 }
 .input:focus {
   outline: none;
@@ -674,17 +681,19 @@ ul {
 .svg-transition {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:hover,
-.modal-close:focus {
+.modal-close:hover {
   background-color: #404bbf;
+}
+.modal-close:hover {
   border: none;
 }
 
-.modal-close:hover > svg,
 .modal-close:focus > svg {
   fill: #ffffff;
 }
-
+.modal-close:hover > svg {
+  fill: #ffffff;
+}
 .div-checkbox {
   margin-bottom: 24px;
 }
@@ -762,10 +771,12 @@ ul {
   justify-content: center;
   fill: transparent;
   flex-shrink: 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-label {
   margin-bottom: 4px;
   font-family: "Roboto", sans-serif;
@@ -784,6 +795,13 @@ ul {
 
 .modal-checkbox:checked + .modal-label span {
   background-color: #404bbf;
+}
+.modal-checkbox:checked + .modal-label span {
   border: none;
+}
+.modal-checkbox:checked + .modal-label span {
   fill: #f4f4fd;
+}
+.modal-checkbox:focus + .modal-label span {
+  border-color: #4d5ae5;
 }
