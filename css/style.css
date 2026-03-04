@@ -697,18 +697,14 @@ ul {
 .modal-button {
   font-family: "Roboto", sans-serif;
   display: block;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
   border-radius: 4px;
   padding: 16px 32px;
-
+  margin: 0 auto;
   min-width: 169px;
   height: 56px;
-
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
